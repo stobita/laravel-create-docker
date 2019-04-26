@@ -3,7 +3,7 @@
 ```
 docker build -t laravel-create .
 docker run --rm -it \
-  -v .:/src \
+  -v "$PWD":/src \
   laravel-create \
-  composer create-project --prefer-dist laravel/laravel laravel-like-twitter
+  composer create-project --prefer-dist laravel/laravel [your project name]
 ```
